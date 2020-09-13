@@ -141,4 +141,80 @@ body {
       align-self: flex-end;
     }
   }
+  .attribution {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-image: url(../images/bg-pattern-top-mobile.svg),
+      url(../images/bg-pattern-bottom-mobile.svg);
+  }
+  .container {
+    .first-row {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      .description {
+        width: 100%;
+        padding: 19px;
+        h1 {
+          text-align: center;
+          font-size: 2em;
+        }
+        p {
+        }
+      }
+      .rated-container {
+        width: 100%;
+        box-sizing: border-box;
+        .rated {
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          flex-wrap: wrap;
+          box-sizing: border-box;
+          height: auto;
+          text-align: center;
+          padding-top: 15px;
+          .stars {
+            width: 100%;
+            box-sizing: border-box;
+          }
+        }
+        .first,
+        .second,
+        .tree {
+          align-self: center;
+        }
+      }
+    }
+    .second-row {
+      padding: 0;
+      height: auto;
+      .opinion-card {
+        width: 100%;
+        margin-bottom: 15px;
+        height: auto;
+        .person-data {
+          .name-container {
+            width: auto;
+            align-items: flex-start;
+          }
+        }
+        .opinion-content {
+          width: 100%;
+          text-align: justify;
+        }
+      }
+    }
+  }
 }

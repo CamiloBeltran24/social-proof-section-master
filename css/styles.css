@@ -134,5 +134,78 @@ body {
 .container .second-row .card-three {
   align-self: flex-end;
 }
+.container .attribution {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+  bottom: 0;
+}
+.container .attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  }
+
+  .container .first-row, .container .second-row {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container .first-row .description, .container .second-row .description {
+    width: 100%;
+    padding: 19px;
+  }
+  .container .first-row .description h1, .container .second-row .description h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+  .container .first-row .rated-container, .container .second-row .rated-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .container .first-row .rated-container .rated, .container .second-row .rated-container .rated {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: auto;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .container .first-row .rated-container .rated .stars, .container .second-row .rated-container .rated .stars {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .container .first-row .rated-container .first, .container .second-row .rated-container .first,
+.container .first-row .rated-container .second,
+.container .second-row .rated-container .second,
+.container .first-row .rated-container .tree,
+.container .second-row .rated-container .tree {
+    align-self: center;
+  }
+  .container .second-row {
+    padding: 0;
+    height: auto;
+  }
+  .container .second-row .opinion-card {
+    width: 100%;
+    margin-bottom: 15px;
+    height: auto;
+  }
+  .container .second-row .opinion-card .person-data .name-container {
+    width: auto;
+    align-items: flex-start;
+  }
+  .container .second-row .opinion-card .opinion-content {
+    width: 100%;
+    text-align: justify;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
