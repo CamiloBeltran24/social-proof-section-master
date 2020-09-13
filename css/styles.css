@@ -10,7 +10,7 @@ body {
 .container {
   width: 100%;
   max-width: 1440px;
-  font-size: 14px;
+  font-size: 15px;
   margin: auto;
 }
 .container .first-row, .container .second-row {
@@ -18,7 +18,9 @@ body {
   justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
-  margin-top: 65px;
+  padding: 20px 0px;
+  margin-top: 80px;
+  margin-bottom: 15px;
 }
 .container .first-row .description, .container .second-row .description {
   width: 500px;
@@ -72,19 +74,20 @@ body {
   align-self: flex-end;
 }
 .container .second-row {
-  justify-content: space-evenly;
-  padding: 0 90px;
+  justify-content: space-between;
+  padding: 0 100px;
   margin-top: 30px;
   height: 240px;
 }
 .container .second-row .opinion-card {
-  width: 380px;
+  width: 360px;
   background-color: #502050;
   border-radius: 8px;
   color: white;
   padding: 25px;
   box-sizing: border-box;
   height: 200px;
+  font-size: 13px;
 }
 .container .second-row .opinion-card .person-data {
   width: 100%;
@@ -97,6 +100,7 @@ body {
   height: 40px;
   border-radius: 50%;
   margin-right: 20px;
+  cursor: pointer;
 }
 .container .second-row .opinion-card .person-data .name-container {
   display: flex;
@@ -109,6 +113,7 @@ body {
 .container .second-row .opinion-card .person-data .name-container .name {
   margin: 0;
   font-weight: 500;
+  cursor: pointer;
 }
 .container .second-row .opinion-card .person-data .name-container .verified {
   margin: 0;
