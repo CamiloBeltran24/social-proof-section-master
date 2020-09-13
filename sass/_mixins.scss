@@ -1,0 +1,13 @@
+@import "_colors.scss";
+
+@mixin card {
+  width: 30%;
+  height: 200px;
+  color: $White;
+  background-color: $Very-Dark-Magenta;
+}
+@mixin centradoFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

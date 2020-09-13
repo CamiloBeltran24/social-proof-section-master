@@ -1,0 +1,140 @@
+@import "_colors.scss";
+@import "_mixins.scss";
+
+body {
+  background-image: url(../images/bg-pattern-top-desktop.svg),
+    url(../images/bg-pattern-bottom-desktop.svg);
+  width: 100%;
+  // height: 100vh;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto;
+  background-position: top left, bottom right;
+  font-family: "Spartan", sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  font-size: 15px;
+  margin: auto;
+  .first-row {
+    @include centradoFlex;
+    box-sizing: border-box;
+    // padding: 70px 0px;
+    margin-top: 65px;
+    .description {
+      width: 500px;
+      box-sizing: border-box;
+      display: inline-block;
+      padding: 15px;
+      h1 {
+        color: $Very-Dark-Magenta;
+        font-size: 3em;
+        font-weight: 700;
+      }
+      p {
+        font-weight: 400;
+        color: $Dark-Grayish-Magenta;
+        font-weight: 400;
+      }
+      // Fin description
+    }
+    .rated-container {
+      // @extend .description;
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      .rated {
+        background-color: $Light-Grayish-Magenta;
+        width: 80%;
+        border-radius: 10px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        img:nth-child(1) {
+          margin-left: 20px;
+        }
+        img {
+          margin: 3px;
+        }
+        p {
+          color: $Very-Dark-Magenta;
+          margin-left: 10px;
+          display: inline-block;
+          font-weight: 700;
+        }
+      }
+      .first {
+        align-self: flex-start;
+      }
+      .second {
+        align-self: center;
+      }
+      .tree {
+        align-self: flex-end;
+      }
+    }
+    // Final Estilos First-row
+  }
+  .second-row {
+    @extend .first-row;
+    justify-content: space-evenly;
+    // align-items: start;
+    padding: 0 90px;
+    margin-top: 30px;
+    height: 240px;
+    .opinion-card {
+      width: 380px;
+      background-color: $Very-Dark-Magenta;
+      border-radius: 8px;
+      color: $White;
+      padding: 25px;
+      box-sizing: border-box;
+      height: 200px;
+      .person-data {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 20px;
+        }
+        .name-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          .name {
+            margin: 0;
+            font-weight: 500;
+          }
+          .verified {
+            margin: 0;
+            font-size: 12px;
+            color: $Soft-Pink;
+          }
+        }
+      }
+      .opinion-content {
+        line-height: 22px;
+        // font-size: 14px;
+        margin-top: 15px;
+        font-weight: 400;
+      }
+    }
+    .card-one {
+      align-self: flex-start;
+    }
+    .card-two {
+      align-self: center;
+    }
+    .card-three {
+      align-self: flex-end;
+    }
+  }
+}
